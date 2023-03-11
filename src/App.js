@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Switch from "./components/Switch";
-
+import Logo from "./components/Logo";
+import SocialLinks from "./components/SocialLinks";
+import NavLinks from "./components/NavLinks";
+import LandingPage from "./Pages/LandingPage";
+import BlogPages from "./Pages/BlogPages";
 function App() {
   const [themeMode, setThemeMode] = useState(() => {
     const storedThemeMode = localStorage.getItem("themeMode");
@@ -23,33 +29,34 @@ function App() {
   }, [themeMode]);
 
   return (
-    <div className={`App ${themeMode} dark:bg-gray-900`}>
-      {/* Navbar */}
-      <header>
-        <div className="bg-white dark:bg-gray-900 text-black dark:text-white">
-          <Switch isOn={themeMode === "dark"} handleToggle={toggleThemeMode} />
-        </div>
-      </header>
-      {/* Content */}
-      <main>
-        {/* Hero */}
-        <div name="home"></div>
-        {/* About */}
-        <div name="about"></div>
-
-        {/* Skills */}
-        <div name="Skills"></div>
-
-        {/* Portfolio */}
-        <div name="portfolio"></div>
-
-        {/* Contact */}
-        <div name="contact"></div>
-
-        {/* ----- Blog ----- */}
-        {/* Blog Home */}
-        {/* Blog Single */}
-      </main>
+    <div className={`App ${themeMode} flex justify-center`}>
+      <Router>
+        {/* Navbar */}
+        <header className="bg-white/90 dark:bg-[#131313]/90 flex items-center p-2 sm:p-3 rounded-full fixed top-4 w-[95%] max-w-7xl  z-40">
+          <div className="flex items-center flex-1">
+            <Logo isOn={themeMode === "dark"} />
+            <NavLinks />
+          </div>
+          <div className="flex items-center mr-5">
+            <SocialLinks isOn={themeMode === "dark"} />
+            <Link
+              to="/blog"
+              className="bg-[#3296F1] mx-8 text-white rounded-full p-3 px-6 text-[14px] font-medium"
+            >
+              Programming Blog
+            </Link>
+            <Switch
+              isOn={themeMode === "dark"}
+              handleToggle={toggleThemeMode}
+            />
+          </div>
+        </header>
+        {/* Content */}
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/blog" element={<BlogPages />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
