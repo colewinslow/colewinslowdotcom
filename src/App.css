@@ -4,4 +4,9 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #fff;
+}
+
+body.dark {
+  background-color: #333;
 }
