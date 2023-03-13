@@ -5,7 +5,7 @@ function BlogCard() {
   return (
     <Link
       to="/blog/2"
-      className="bg-white mt-10 overflow-hidden dark:bg-[#131313] rounded-[40px] shadow-sm w-full sm:h-[300px]  h-[500px] flex flex-col sm:flex-row items-center sm:justify-evenly"
+      className="bg-white mt-10 overflow-hidden dark:bg-[#131313] rounded-[40px] shadow-sm w-full sm:h-[300px]  h-[500px] flex flex-col sm:flex-row items-center sm:justify-evenly cursor-pointer hover:opacity-80"
     >
       <div className="sm:w-[480px] w-full  h-[200px] sm:h-full flex justify-center items-center">
         <img

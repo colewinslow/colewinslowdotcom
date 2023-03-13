@@ -16,9 +16,9 @@ function Contact() {
         <form
           action="https://formsubmit.co/colewinslow174@gmail.com"
           method="POST"
-          className="w-full    rounded-md  bg-white dark:bg-[#040404]  "
+          className="w-full    rounded-md   "
         >
-          <div className="flex justify-evenly flex-wrap w-full p-6  sm:p-8">
+          <div className="flex justify-evenly flex-wrap w-full p-4  sm:p-8">
             <div
               className=" w-full
         flex flex-col sm:flex-row items-center"
