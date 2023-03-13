@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialLinks({ isOn }) {
   return (
-    <div className="sm:flex items-center hidden ">
+    <div className="flex items-center mr-4 ">
       {" "}
       {isOn ? (
         <>
