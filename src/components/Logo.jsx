@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Logo({ isOn }) {
   return (
-    <Link to="/" className="mx-5">
+    <Link to="/" className="mx-5 hover:opacity-60 cursor-pointer">
       {isOn ? (
         <svg
           width="52"

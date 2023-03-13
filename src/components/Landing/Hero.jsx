@@ -21,13 +21,19 @@ function Hero() {
                 spy={true}
                 smooth={true}
                 offset={-150}
-                className="bg-[#3296F1] mr-8 text-white rounded-full p-5 px-10 text-[14px] font-medium"
+                className="bg-[#3296F1] mr-8 text-white rounded-full p-5 px-10 text-[14px] font-medium hover:opacity-60 cursor-pointer"
                 to="portfolio"
               >
                 {" "}
                 View Portfolio
               </Link>
-              <Link spy={true} smooth={true} to="contact">
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-150}
+                to="contact"
+                className="hover:opacity-60 cursor-pointer"
+              >
                 Contact Me
               </Link>
             </div>

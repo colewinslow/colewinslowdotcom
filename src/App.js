@@ -42,7 +42,7 @@ function App() {
             <SocialLinks isOn={themeMode === "dark"} />
             <Link
               to="/blog"
-              className="bg-[#3296F1] sm:mx-8  mx-2 mr-10 text-white rounded-full p-3 px-6 text-[12px] sm:text-[14px] font-medium"
+              className="bg-[#3296F1] sm:mx-8  mx-2 mr-10 text-white rounded-full p-3 px-6 text-[12px] sm:text-[14px] font-medium hover:opacity-60 cursor-pointer"
             >
               Programming Blog
             </Link>

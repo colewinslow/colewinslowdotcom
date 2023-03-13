@@ -27,7 +27,7 @@ function NavLinks() {
               <button
                 key={id}
                 onClick={() => HandleHomeChange(to)}
-                className="mx-4 text-sm cursor-pointer "
+                className="mx-4 text-sm  hover:opacity-60 cursor-pointer "
               >
                 {text}
               </button>
@@ -45,7 +45,7 @@ function NavLinks() {
                 offset={-150}
                 smooth={true}
                 duration={400}
-                className="mx-4 text-sm cursor-pointer hover:opacity-80"
+                className="mx-4 text-sm hover:opacity-60 cursor-pointer"
               >
                 {text}
               </Link>
