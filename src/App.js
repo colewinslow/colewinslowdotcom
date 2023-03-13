@@ -7,7 +7,8 @@ import Logo from "./components/Logo";
 import SocialLinks from "./components/SocialLinks";
 import NavLinks from "./components/NavLinks";
 import LandingPage from "./Pages/LandingPage";
-import BlogPages from "./Pages/BlogPages";
+import BlogPage from "./Pages/BlogPage";
+import BlogSinglePage from "./Pages/BlogSinglePage";
 function App() {
   const [themeMode, setThemeMode] = useState(() => {
     const storedThemeMode = localStorage.getItem("themeMode");
@@ -41,9 +42,9 @@ function App() {
             <SocialLinks isOn={themeMode === "dark"} />
             <Link
               to="/blog"
-              className="bg-[#3296F1] mx-8 text-white rounded-full p-3 px-6 text-[14px] font-medium"
+              className="bg-[#3296F1] sm:mx-8  mx-2 mr-10 text-white rounded-full p-3 px-6 text-[12px] sm:text-[14px] font-medium"
             >
-              Programming Blog
+              Blog
             </Link>
             <Switch
               isOn={themeMode === "dark"}
@@ -54,7 +55,8 @@ function App() {
         {/* Content */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/blog" element={<BlogPages />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogSinglePage />} />
         </Routes>
       </Router>
     </div>

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Logo({ isOn }) {
   return (
-    <div className="mx-5">
+    <Link to="/" className="mx-5">
       {isOn ? (
         <svg
           width="52"
@@ -36,7 +38,7 @@ function Logo({ isOn }) {
           />
         </svg>
       )}
-    </div>
+    </Link>
   );
 }
 export default Logo;

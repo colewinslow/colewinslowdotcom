@@ -42,8 +42,10 @@ function NavLinks() {
                 to={to}
                 key={id}
                 spy={true}
+                offset={-150}
                 smooth={true}
-                className="mx-4 text-sm cursor-pointer "
+                duration={400}
+                className="mx-4 text-sm cursor-pointer hover:opacity-80"
               >
                 {text}
               </Link>
