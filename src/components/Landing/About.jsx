@@ -1,5 +1,5 @@
 import React from "react";
-import PersonalPhoto from "../../Assets/PersonPhoto.png";
+import PersonalPhoto from "../../Assets/PersonPhoto.jpg";
 function About() {
   return (
     <div className=" w-full flex justify-center items-center  sm:mt-0 ">
