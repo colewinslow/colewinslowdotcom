@@ -2,7 +2,7 @@ import React from "react";
 import PersonalPhoto from "../../Assets/PersonPhoto.png";
 function About() {
   return (
-    <div className=" w-full flex justify-center items-center mt-52 sm:mt-0 ">
+    <div className=" w-full flex justify-center items-center  sm:mt-0 ">
       <div className="bg-white dark:bg-[#131313] rounded-[40px] flex md:flex-row flex-col  shadow-sm w-full  p-5  md:p-14  ">
         <div className="md:w-[50%] w-full h-[200px] md:h-[450px] flex md:justify-center items-center mr-0 sm:mr-12">
           <img

@@ -16,7 +16,7 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col items-center lg:flex-row space-evenly">
-          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5 m-4 ">
+          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5 sm:m-4 ">
             <div className="p-2">
               {" "}
               <h3 className="my-2">Languages</h3>
@@ -155,7 +155,7 @@ function Skills() {
               </svg>
             </div>
           </div>
-          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5  m-4 ">
+          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5 mt-2  sm:m-4 ">
             <div className="p-2">
               {" "}
               <h3 className="my-2">Frameworks</h3>
@@ -248,7 +248,7 @@ function Skills() {
               </svg>
             </div>
           </div>
-          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5   m-4">
+          <div className="bg-[#f3f3f3] dark:bg-[#040404] rounded-[40px] flex  flex-col  shadow-sm w-full  p-5 mt-2  sm:m-4">
             <div className="p-2">
               {" "}
               <h3 className="my-2">Backend Technologies</h3>

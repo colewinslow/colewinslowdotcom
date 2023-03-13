@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 import Computer from "../../Assets/Computer.svg";
 function Hero() {
   return (
-    <div className="w-full sm:h-[100vh] max-h-[900px]  flex justify-center items-center ">
-      <div className="bg-white dark:bg-[#131313] rounded-[40px] shadow-sm w-full h-[70%] p-6 py-24 mt-20 sm:my-20 ">
+    <div className="w-full h-[100vh] max-h-[900px]  flex justify-center items-center ">
+      <div className="bg-white dark:bg-[#131313] rounded-[40px] shadow-sm w-full h-[80%] sm:h-[70%] p-6 py-24 sm:mt-20 sm:my-20 ">
         <div className=" flex justify-center sm:justify-evenly items-center h-full w-full relative">
           <div className="lg:w-[50%] flex flex-col   h-full justify-center sm:z-0 z-2">
             <h1 className="md:text-[65px] text-[40px] w-full font-bold text-[#484848] dark:text-white  mt-[-20px]">

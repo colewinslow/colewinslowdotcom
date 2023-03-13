@@ -17,7 +17,7 @@ function LandingPage() {
         <About />
       </div>
       {/* Skills */}
-      <div name="skills" className="my-20">
+      <div name="skills" className="my-20 flex w-full">
         <Skills />
       </div>
       {/* Portfolio */}

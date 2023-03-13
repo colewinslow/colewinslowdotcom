@@ -10,7 +10,7 @@ function BlogPage() {
     return null;
   }
   return (
-    <main className="w-[95%] max-w-7xl flex flex-col items-center mt-[105px]">
+    <main className="w-[95%] max-w-7xl flex flex-col items-center mt-[85px]">
       <ScrollToTopOnMount />
       <BlogCard />
       <BlogCard />
